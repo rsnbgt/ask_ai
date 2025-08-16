@@ -133,6 +133,10 @@ app.put("/api/chats/:id",requireAuth(),async(req,res)=>{
     }
 })
 
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
+
 app.use((err,req,res,next)=>{
     console.log(err.stack);
     res.status(401).send('Unauthenticated!');
