@@ -22,7 +22,7 @@ const ChatList = () => {
         {/* <Link to="/">Contact</Link> */}
         <hr className='opacity-15 border-1 mx-2 my-2'/>
         <span className='font-semibold mb-2 text-lg text-blue-300'>RECENT CHATS</span>
-        <div className='flex flex-col overflow-y-auto '>
+        <div className='flex flex-col overflow-y-scroll '>
           {isPending
             ?"Loading..."
             :error
