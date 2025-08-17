@@ -10,10 +10,9 @@ import dotenv from "dotenv";
 dotenv.config();
 const port =process.env.PORT || 3000;
 const app=express();
-
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://your-frontend.onrender.com"], // allow local + deployed frontend
+    origin: ["http://localhost:5173", "https://ask-ai-frontend.onrender.com"], // allow local + deployed frontend
     credentials: true, // allow cookies/auth headers
   })
 );
